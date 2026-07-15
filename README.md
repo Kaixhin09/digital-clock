@@ -1,16 +1,50 @@
-# React + Vite
+# Digital Clock
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Digital Clock is a small, modern clock built with Vite + React and styled with a responsive glassmorphism theme.
 
-Currently, two official plugins are available:
+## Features
+- Responsive, large numeric clock display
+- Modern CSS design (variables, gradients, glass effect)
+- Easy to extend (theme toggle, extra info chips)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Quick Start
 
-## React Compiler
+Prerequisites: Node.js (16+) and npm.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Install and run locally:
 
-## Expanding the Oxlint configuration
+```bash
+npm install
+npm run dev
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+Open the URL shown by Vite (usually http://localhost:5173).
+
+Build for production:
+
+```bash
+npm run build
+npm run preview
+```
+
+## Project Structure
+
+- `index.html` — app entry
+- `src/main.jsx` — app bootstrap
+- `src/App.jsx` — main UI wrapper
+- `src/Clock.jsx` — clock component (time logic)
+- `src/App.css` — main stylesheet (modern glass/gradient theme)
+- `public/` — static assets
+
+## Customization
+- Edit `src/App.css` to change colors, spacing, or typography.
+- `src/Clock.jsx` contains time formatting and display logic if you want to add locales, alarms, or seconds toggles.
+
+## Deployment
+This project builds to static assets. Deploy the `dist/` folder to Netlify, Vercel, GitHub Pages, or any static host.
+
+## Contributing
+Issues and PRs welcome. Keep changes focused and include a brief description of intent.
+
+## License
+MIT
